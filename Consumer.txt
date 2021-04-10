@@ -1,0 +1,17 @@
+package assign;
+
+import java.util.function.Consumer;
+
+public class ConsumerMain {
+
+	public static void main(String[] args) {
+		/*
+		 * Consumer<String> a = (pincode)->System.out.println(pincode);
+		 * a.accept("636007");
+		 */
+		
+		Consumer<Integer> a1 = (a)-> System.out.println(a*2);
+		a1.accept(2);
+	}
+
+}

@@ -1,0 +1,17 @@
+package assign;
+
+import java.util.function.Supplier;
+
+public class SupplierMain {
+
+	public static void main(String[] args) {
+		Supplier<String> emp = ()->{
+			String emp_ID = "VT";
+			for(int i=0; i<6; i++) {
+				emp_ID = emp_ID + (int)(Math.random()*10);
+			}return emp_ID;
+		};
+		System.out.println(emp.get());
+	}
+
+}
